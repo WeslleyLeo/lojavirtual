@@ -26,7 +26,9 @@ closeCart.addEventListener('click', () => {
                 newProduct.dataset.id = product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
-                `<img src="${product.image}" alt="">
+                `<a href="${product.image}" alt="">
+                    <img src="${product.image}" alt="">
+                </a>
                 <h2>${product.name}</h2>
                 <div class="price">R$: ${product.price}</div>
                 <button class="addCart">Adicione ao Carrinho</button>`;
